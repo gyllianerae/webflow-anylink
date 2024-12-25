@@ -4,11 +4,11 @@
   font-weight: normal;
   font-style: normal;
 }
+
 [class^="w-icon-"],
 [class*=" w-icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'webflow-icons' !important;
-  speak: none;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -96,8 +96,11 @@ html.w-mod-touch * {
   border-radius: 0;
 }
 input.w-button {
-  -webkit-appearance: button;
+  -webkit-appearance: button; /* Chrome, Safari, Edge */
+  -moz-appearance: button;    /* Firefox */
+  appearance: button;         /* Standard property */
 }
+
 html[data-w-dynpage] [data-w-cloak] {
   color: transparent !important;
 }
@@ -297,8 +300,13 @@ button,
 [type='reset'] {
   border: 0;
   cursor: pointer;
-  -webkit-appearance: button;
+
+  /* Appearance */
+  -webkit-appearance: button; /* Chrome, Safari, Edge */
+  -moz-appearance: button;    /* Firefox */
+  appearance: button;         /* Standard property */
 }
+
 .w-form {
   margin: 0 0 15px;
 }
@@ -329,7 +337,7 @@ label {
   font-size: 14px;
   line-height: 1.42857143;
   color: #333333;
-  vertical-align: middle;
+  /* vertical-align: middle; */
   background-color: #ffffff;
   border: 1px solid #cccccc;
 }
@@ -923,7 +931,7 @@ textarea.w-select {
   background: #dddddd;
   clear: both;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 .w-slider-mask {
   position: relative;
@@ -956,7 +964,7 @@ textarea.w-select {
   height: 40px;
   text-align: center;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 .w-slider-nav.w-round > div {
   border-radius: 100%;
@@ -1014,7 +1022,7 @@ textarea.w-select {
   color: white;
   font-size: 40px;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   user-select: none;
 }
 .w-slider-arrow-left [class^='w-icon-'],
@@ -1137,7 +1145,7 @@ textarea.w-select {
  * 2. Fixes flickering on Chrome when a transition is in progress
  *    underneath the lightbox.
  */
-.w-lightbox-backdrop {
+ .w-lightbox-backdrop {
   cursor: auto;
   font-style: normal;
   letter-spacing: normal;
@@ -1164,14 +1172,28 @@ textarea.w-select {
   background: rgba(0, 0, 0, 0.9);
   z-index: 2000;
   outline: 0;
-  /* 1 */
   opacity: 0;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -webkit-tap-highlight-color: transparent;
-  -webkit-transform: translate(0, 0);
-  /* 2 */
+  
+  /* User Select */
+  -webkit-user-select: none; /* Chrome, Safari, Edge */
+  -moz-user-select: none;    /* Firefox */
+  -ms-user-select: none;     /* Internet Explorer 10+ */
+  user-select: none;         /* Standard property */
+
+  /* Tap Highlight */
+  -webkit-tap-highlight-color: transparent; /* Mobile browsers */
+
+  /* Transform */
+  -webkit-transform: translate(0, 0); /* Chrome, Safari, Edge */
+  -ms-transform: translate(0, 0);     /* Internet Explorer 9 */
+  transform: translate(0, 0);         /* Standard property */
+
+  /* Appearance */
+  -webkit-appearance: none; /* Chrome, Safari, Edge */
+  -moz-appearance: none;    /* Firefox */
+  appearance: none;         /* Standard property */
 }
+
 /**
  * Neat trick to bind the rubberband effect to our canvas instead of the whole
  * document on iOS. It also prevents a bug that causes the document underneath to scroll.
@@ -1321,16 +1343,19 @@ textarea.w-select {
  *    the parent is also rendered on the GPU (by setting translate3d for
  *    example) fixes this behavior.
  */
-.w-lightbox-item {
+ .w-lightbox-item {
   display: inline-block;
   width: 10vh;
   padding: 2vh 1vh;
   box-sizing: content-box;
-  /* 1 */
   cursor: pointer;
-  -webkit-transform: translate3d(0, 0, 0);
-  /* 2 */
+
+  /* Transform */
+  -webkit-transform: translate3d(0, 0, 0); /* Chrome, Safari, Edge */
+  -ms-transform: translate3d(0, 0, 0);     /* Internet Explorer 9 */
+  transform: translate3d(0, 0, 0);         /* Standard property */
 }
+
 .w-lightbox-active {
   opacity: 0.3;
 }
@@ -1657,7 +1682,7 @@ textarea.w-select {
   display: none;
   cursor: pointer;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   user-select: none;
 }
 .w-nav-button:focus {
