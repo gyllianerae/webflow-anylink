@@ -1,0 +1,20 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2021 by original authors @ fontello.com</metadata>
+<defs>
+<font id="social-media" horiz-adv-x="1000" >
+<font-face font-family="social-media" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="arrow-icon-links-webflow-template" unicode="&#xe800;" d="M480 817c21 20 55 20 76 0l428-429c0 0 1 0 1 0 5-5 8-11 11-17 3-7 4-14 4-21 0-7-1-14-4-20-3-7-6-12-11-18 0 0-1 0-1 0l-428-429c-21-20-55-20-76 0-21 21-21 55 0 76l337 337h-763c-30 0-54 24-54 54 0 30 24 54 54 54h763l-337 337c-21 21-21 55 0 76z" horiz-adv-x="1000" />
+
+<glyph glyph-name="arrow-top-icon-links-webflow-template" unicode="&#xe801;" d="M24-126c33-32 86-32 118 0l834 834c32 32 32 85 0 118-33 32-86 32-118 0l-834-834c-32-32-32-85 0-118z m893 24c46 0 83 37 83 83v786c0 46-37 83-83 83h-786c-46 0-83-37-83-83 0-46 37-84 83-84h702v-702c0-46 38-83 84-83z" horiz-adv-x="1000" />
+
+<glyph glyph-name="clock-icon-links-webflow-template" unicode="&#xe802;" d="M500-150c-276 0-500 224-500 500 0 276 224 500 500 500 277 0 500-224 500-500 0-276-223-500-500-500z m160 315c6-4 12-6 19-6 13 0 25 7 32 19 11 17 5 40-13 51l-178 106v231c0 21-17 38-37 38-21 0-38-17-38-38v-252c0-13 7-25 19-32l196-117z" horiz-adv-x="1000" />
+
+<glyph glyph-name="play-cirlce-icon-links-webflow-template" unicode="&#xe804;" d="M0 350c0 276 224 500 500 500 276 0 500-224 500-500 0-276-224-500-500-500-276 0-500 224-500 500z m683-51c6 5 13 14 14 16 8 10 12 22 12 35 0 14-5 27-13 37-1 1-2 3-4 4-3 4-8 9-12 13-40 43-143 112-197 133-8 4-29 11-40 12-11 0-21-3-30-8-12-6-22-17-27-30-4-8-9-34-9-35-5-28-8-75-8-126 0-48 3-93 7-122 0 0 1-2 1-5 2-10 6-30 11-39 10-20 31-32 53-32h2c15 0 45 13 45 13 51 21 152 87 193 131l2 3z" horiz-adv-x="1000" />
+
+<glyph glyph-name="play-icon-links-webflow-template" unicode="&#xe805;" d="M340 819c-150 88-340-20-340-195v-545c0-175 190-283 340-195l464 273c148 87 148 302 0 389l-464 273z" horiz-adv-x="941" />
+</font>
+</defs>
+</svg>
